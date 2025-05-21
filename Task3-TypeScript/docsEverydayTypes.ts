@@ -1,6 +1,6 @@
 //type auto assigned for s as the calling array names already has a type defined.
 type StringArray1 = Array<string>;
-const names : StringArray = ["Alice", "Bob", "Eve"];
+const names : StringArray1 = ["Alice", "Bob", "Eve"];
  
 // Contextual typing for function - parameter s inferred to have type string
 names.forEach(function (s) {

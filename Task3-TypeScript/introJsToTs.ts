@@ -56,6 +56,7 @@ function getLength(obj: string | string[]) {
   return obj.length;
 }
 
+
 const adi : MyBool = true;
 
 //Use typeof to check the type of the object.
