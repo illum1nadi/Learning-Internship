@@ -8,6 +8,8 @@ import ButtonApp from './pages/stateAndEventHandlers.jsx';
 import Counter from './pages/batchedUpdates.jsx';
 import Form from './pages/objectsUpdate.jsx';
 import ListsArray from './pages/arrayUpdate.jsx';
+import SyncedInputs, { FilterableList } from './pages/sharingState.jsx';
+import PreserveResetState from './pages/preserveResetState.jsx';
 
 export default function App() {
   return (
@@ -18,8 +20,11 @@ export default function App() {
         <Link to="/listsComp">Lists</Link> |{" "}
         <Link to="/stateAndEventHandlers">State and Event Handlers</Link> |{" "}
         <Link to="/batchedUpdates">Batched Updates</Link> |{" "}
-        <Link to="/objectsUpdate">Objects Update</Link>
-        <Link to="/arrayUpdate">Array Update</Link>
+        <Link to="/objectsUpdate">Objects Update</Link> |{" "}
+        <Link to="/arrayUpdate">Array Update</Link> |{" "}
+        <Link to="/sharingState">Sharing State</Link> |{" "}
+        <Link to="/filterFunction">Filterable List</Link> |{" "}
+        <Link to="/preserveResetState">Preserve Reset State</Link>
       </nav>
 
       <Routes>
@@ -30,6 +35,9 @@ export default function App() {
         <Route path="/batchedUpdates" element={<Counter/>} />
         <Route path="/objectsUpdate" element={<Form/>} />
         <Route path="/arrayUpdate" element={<ListsArray/>} />
+        <Route path="/sharingState" element={<SyncedInputs/>} />
+        <Route path="/filterFunction" element={<FilterableList/>} />
+        <Route path="/preserveResetState" element={<PreserveResetState/>} />
       </Routes>
     </div>
   );
