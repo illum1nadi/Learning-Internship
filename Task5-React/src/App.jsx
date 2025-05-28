@@ -10,6 +10,9 @@ import Form from './pages/objectsUpdate.jsx';
 import ListsArray from './pages/arrayUpdate.jsx';
 import SyncedInputs, { FilterableList } from './pages/sharingState.jsx';
 import PreserveResetState from './pages/preserveResetState.jsx';
+import TaskApp from './pages/reducerStateLogic.jsx';
+import Page from './pages/levelContext.jsx';
+import Chat from './pages/sampleRefUsage.jsx';
 
 export default function App() {
   return (
@@ -24,7 +27,10 @@ export default function App() {
         <Link to="/arrayUpdate">Array Update</Link> |{" "}
         <Link to="/sharingState">Sharing State</Link> |{" "}
         <Link to="/filterFunction">Filterable List</Link> |{" "}
-        <Link to="/preserveResetState">Preserve Reset State</Link>
+        <Link to="/preserveResetState">Preserve Reset State</Link> |{" "}
+        <Link to="/reducerStateLogic">Reducer State Logic</Link> |{" "}
+        <Link to="/levelContext">Level Context</Link> |{" "}
+        <Link to="/chat">Sample Ref Usage</Link>
       </nav>
 
       <Routes>
@@ -38,6 +44,9 @@ export default function App() {
         <Route path="/sharingState" element={<SyncedInputs/>} />
         <Route path="/filterFunction" element={<FilterableList/>} />
         <Route path="/preserveResetState" element={<PreserveResetState/>} />
+        <Route path="/reducerStateLogic" element={<TaskApp/>} />
+        <Route path="/levelContext" element={<Page/>} />
+        <Route path="/chat" element={<Chat/>} />
       </Routes>
     </div>
   );
